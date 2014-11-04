@@ -17,7 +17,6 @@ client
 integrated with any community. 
 
 As of now the current code is very generic, forked and modified from
-http://www.techumber.com/2012/11/Simple-Chat-Engine-Using-HTML5-Server-
-Sent-Events-And-PHP.html as a starting point for future code.
+http://www.techumber.com/2012/11/Simple-Chat-Engine-Using-HTML5-Server-Sent-Events-And-PHP.html as a starting point for future code.
 
 All contributions are welcome, please contact Pinkstarfishofdeath
