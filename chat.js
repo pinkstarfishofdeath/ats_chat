@@ -1,7 +1,7 @@
 var ChatEngine=function(){
 	var name="";
 	var msg="";
-	var AtsChatZone=document.getElementByld("AtsChatZone");
+	var chatZone=document.getElementByld("chatZone");
 	var oldata="";
 	var sevr="";
 	var xhr="";
@@ -18,14 +18,14 @@ var ChatEngine=function(){
 	this.setName=function(){
 		name = prompt("Enter your name:","Chatter");
 		if (!name || name ==="") {
-			name = "Chater";
+			name = "FAG";
 		}
 		name = name.replace(/(<([^>]+)>)/ig,"");
 	};
 	//For sending message
 	this.sendMsg=function(){
 		msg=documentGetByld("msg").value;
-		AtsChatZone.innerHTML+='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';
+		chatZone.innerHTML+='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';
 		oldata='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';
 		this.ajaxSent();
 		return false;
