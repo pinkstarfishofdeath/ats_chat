@@ -16,9 +16,9 @@ var ChatEngine=function(){
      };
      //Setting user name
      this.setName=function(){
-          name = prompt("Enter your name:","Chater");
+          name = prompt("Enter your name:","NSA");
           if (!name || name ==="") {
-             name = "Chater";  
+             name = "NSA";  
           }
           name = name.replace(/(<([^>]+)>)/ig,"");
      };
@@ -27,7 +27,8 @@ var ChatEngine=function(){
           msg=document.getElementById("msg").value;
           chatZone.innerHTML+='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';
           oldata='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';          
-          this.ajaxSent();  
+          this.ajaxSent();
+            document.getElementById("msg").reset();
           return false;
      };
      //sending message to server
