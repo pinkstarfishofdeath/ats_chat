@@ -28,7 +28,7 @@ var ChatEngine=function(){
           chatZone.innerHTML+='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';
           oldata='<div class="chatmsg"><b>'+name+'</b>: '+msg+'<br/></div>';          
           this.ajaxSent();
-            document.getElementById("msg").value = "";
+          document.getElementById("msg").value = "";
           return false;
      };
      //sending message to server
